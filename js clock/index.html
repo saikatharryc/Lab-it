@@ -1,0 +1,20 @@
+<script type="text/javascript">
+function clock() {
+var strcount
+var x = new Date()
+var h = x.getHours( );
+var m = x.getMinutes();
+var s = x.getSeconds();
+
+var x1=x.getMonth() + "/" + x.getDate() + "/" + x.getYear(); 
+x1 = x1 + " - " + x.getHours( )+ ":" + x.getMinutes() + ":" + x.getSeconds();
+document.getElementById('clk').innerHTML = x1;
+
+
+}
+
+</script>
+<body onload="clock()">
+<div id="clk"></div>
+	
+</body>
